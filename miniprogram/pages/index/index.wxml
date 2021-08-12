@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<page-meta>
+	<navigation-bar title="BlueTV" loading="{{scaning}}" />
+</page-meta>
+<view class="container">
+	<view class="fc top-bar m-1" hover-class="hover" bindlongtap="toLogScreen" bindtap="onTryScan" wx:if="{{!connectDevice}}">
+		<text class="h4 m-1">No Connect Bluetooth</text>
+		<text class="p m-1">Click here start or stop scan</text>
+	</view>
+	<view class="fc top-bar m-1" hover-class="hover" bindlongtap="toLogScreen" wx:if="{{!!connectDevice}}">
+		<text class="h4 m-1">Connected BleId: {{connectDevice && connectDevice.name}}</text>
+		<view class="frn">
+			<button class="m-1" type="primary" bindtap="onWirteByConnect">WIRTE</button>
+			<view class="m-1" />
+			<button class="m-1" type="default" bindtap="onTryScan">{{!scaning?'START SCAN':'STOP SCAN'}}</button>
+		</view>
+	</view>
+	<view class="list-container">
+		<view class="list-item" hover-class="hover" wx:for="{{devices}}" wx:key="deviceId" bindtap="onConnectBlueItem" data-id="{{item.deviceId}}">
+			<text>{{item.name || item.deviceId}}</text>
+			<view class="frn ac">
+				<text>{{item.RSSI}}</text>
+				<view wx:if="{{connectBle.deviceId === item.deviceId}}" class="list-item-point m-1"></view>
+			</view>
+		</view>
+	</view>
+</view> 

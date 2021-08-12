@@ -1,0 +1,89 @@
+/**app.wxss**/
+
+page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.hover {
+  opacity: 0.8;
+  scale: 0.8;
+  background-color: #dddddd;
+}
+
+.frn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+
+.jsb {
+  justify-content: space-between;
+}
+
+.afs {
+  align-items: flex-start;
+}
+
+.ac {
+  align-items: center;
+}
+
+.m-1 {
+  margin: 8px;
+}
+
+.p-1 {
+  padding: 8px;
+}
+
+.h1 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.h2 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 800;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.p {
+  font-size: 16px;
+}
+
+.smail {
+  font-size: 12px;
+}
+
+.bt-link {
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-style: oblique;
+  border-bottom: 1px #d5d5d5 solid;
+}
+
+.bt-link:hover {
+  background-color: #d5d5d5;
+}

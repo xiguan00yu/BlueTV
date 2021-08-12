@@ -1,0 +1,70 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  overflow: auto;
+}
+
+#canvas_box {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-bar {
+  padding: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: white;
+  border-bottom: 1px solid #f8f8f8;
+  border-radius: 8px;
+  display: flex;
+}
+
+#code_box {
+  border: 1px solid #d3d3d3;
+  max-height: 10vh;
+  min-height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+input {
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.threshold-input {
+  text-align: right;
+}
+
+.font-size-input {
+  text-align: right;
+}
+
+.print-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px darkgray solid;
+}
+
+.byte-input {
+  text-align: center;
+}
+
+.mini-input {
+  width: 80px;
+  color: #888888;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #f8f8f8;
+}

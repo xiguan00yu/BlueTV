@@ -1,0 +1,39 @@
+/**index.wxss**/
+.container {
+  flex: 1;
+}
+
+.top-bar {
+  padding: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: white;
+  border-bottom: 1px solid #f8f8f8;
+  border-radius: 8px;
+  display: flex;
+
+}
+
+.list-container {
+  flex: 1;
+  overflow: auto;
+}
+
+.list-item {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.list-item-point {
+  background-color: seagreen;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
